@@ -7,7 +7,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time=0:0:1  #0 days 2 hours
+#SBATCH --time=0:0:2  #0 days 2 hours
 #SBATCH --mem=2GB
 # commands for your job go here
 module load r
