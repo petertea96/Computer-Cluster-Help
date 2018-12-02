@@ -41,6 +41,7 @@ This program allows you to easily drag and drop files between the two directorie
 5.	How do you write your *.sh files?
 -	I would first download Notepad ++
 -	When you save, always make sure to have the extension .sh
+- For something more sophisticated, feel free to use text editors on the command line such as nano or vim.
 
 6.	Submit your *.sh files onto CAC:
 -	sbatch yourjob.sh  
