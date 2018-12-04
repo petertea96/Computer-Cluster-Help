@@ -17,7 +17,7 @@ https://www.chpc.utah.edu/presentations/index.php
 
 Without further ado...
 
-1.	Log onto the cluster:
+#1.	Log onto the cluster:
 
 Code: ssh -X hpc4300@login.cac.queensu.ca
 *Use your own hpc number though…
@@ -25,11 +25,11 @@ Code: ssh -X hpc4300@login.cac.queensu.ca
 The terminal will then prompt you to enter your password.
 
 
-2.	Create a new directory (folder):
+#2.	Create a new directory (folder):
 mkdir NewFolderName
 
 
-3.	Here are some nice general commands to know…
+#3.	Here are some nice general commands to know…
 ls : List items in your current directory.
 
 pwd :print the  current working directory.
@@ -42,22 +42,22 @@ cat : Print the contents of a file. Example:  cat namefile.txt
 
 
 
-4.	How to transfer files from your computer onto the CAC directory (For windows):
+#4.	How to transfer files from your computer onto the CAC directory (For windows):
 
 One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it).
 
 This program allows you to easily drag and drop files between the two directories.
 
 
-5.	How do you write your *.sh files?
+#5.	How do you write your *.sh files?
 - For something more sophisticated, feel free to use text editors on the command line such as nano or vim.
 -	If you're uncomfortable with this, you can instead download Notepad ++.
 -	When you save, always make sure to have the extension .sh
 
-6.	Submit your *.sh files onto CAC:
+#6.	Submit your *.sh files onto CAC:
 -	sbatch yourjob.sh  
 
-7.	Sometimes when you submit your *.sh jobs, you may encounter an error message such as:
+#7.	Sometimes when you submit your *.sh jobs, you may encounter an error message such as:
 “sbatch: error: Batch script contains DOS line breaks (\r\n)
 “sbatch: error: instead of expected UNIX line breaks (\n)
 
@@ -66,15 +66,15 @@ dos2unix yourjob.sh
 
 -	Now, try running your job again.
 
-8.	How to Run R jobs
+#8.	How to Run R jobs
 -	Check out test1.sh as well as Cluster_Test1.R for a very simple example. 
 -	Make sure though that your R script is in the same directory as your shell script. If your R script is in a different directory, then change your code to: [path to R file]/Rfile
 -	You could also use Rscript instead of R CMD BATCH in your *.sh scripts…
 
-9.	A way to check on the status of the jobs you have submitted:
+#9.	A way to check on the status of the jobs you have submitted:
 -	squeue --start | grep hpc4300
 
-10.	How to install R packages onto the CAC cluster.
+#10.	How to install R packages onto the CAC cluster.
 
 If the R codes you input contain calls such as library() or require() then it won’t work in the cluster. You will need to install the R packages yourself into the CAC directory. Here’s how to do it:
 
@@ -96,16 +96,16 @@ For example, I made a folder called “RPackages” which contains all of my dow
 (This changes the c compiler, which R uses to install packages)
 2.	Open R and then try installing MDMR again using install.packages(“MDMR”). If it installed successfully, library(MDMR) should work. 
 
-11.	How to perform array jobs and how to call variables from shell script to your R script.
+#11.	How to perform array jobs and how to call variables from shell script to your R script.
 -	Check out test4.sh and test4.R
 
 
 
-12.	For coding in bash, the syntax is a little different however all concepts in your usual programming are the same. The following website is helpful in figuring out the syntax:
+#12.	For coding in bash, the syntax is a little different however all concepts in your usual programming are the same. The following website is helpful in figuring out the syntax:
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
 -	I’ve also compiled some very rough notes titled “Shell scripting tutorial.docx”.
 
-13.	How to run the ms program:
+#13.	How to run the ms program:
 
 Here is a sample command I’ve used:
 ./ms 200 1 -t 5.0 -T
