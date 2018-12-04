@@ -15,6 +15,8 @@ https://sph.umich.edu/biostat/computing/cluster/examples/r.html
 
 https://www.chpc.utah.edu/presentations/index.php
 
+Without further ado...
+
 1.	Log onto the cluster:
 
 Code: ssh -X hpc4300@login.cac.queensu.ca
@@ -28,21 +30,29 @@ mkdir NewFolderName
 
 
 3.	Here are some nice general commands to know…
-ls : List items in your current directory:
-pwd :print the  current working directory:
-rm [filename]: delete the filename from your directory
+ls : List items in your current directory.
+
+pwd :print the  current working directory.
+
+rm [filename]: delete the filename from your directory.
+
 cd : Change the directory. Example : cd /global/home/hpcg1578/Peter
-cat : Print the contents of a file. Example:  Cat namefile.txt
+
+cat : Print the contents of a file. Example:  cat namefile.txt
+
+
 
 4.	How to transfer files from your computer onto the CAC directory (For windows):
 
-Download a program called WINSCP (This program is like FileZilla).
+One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it).
+
 This program allows you to easily drag and drop files between the two directories.
 
+
 5.	How do you write your *.sh files?
--	I would first download Notepad ++
--	When you save, always make sure to have the extension .sh
 - For something more sophisticated, feel free to use text editors on the command line such as nano or vim.
+-	If you're uncomfortable with this, you can instead download Notepad ++.
+-	When you save, always make sure to have the extension .sh
 
 6.	Submit your *.sh files onto CAC:
 -	sbatch yourjob.sh  
@@ -53,6 +63,7 @@ This program allows you to easily drag and drop files between the two directorie
 
 -	One possible solution is this code:
 dos2unix yourjob.sh
+
 -	Now, try running your job again.
 
 8.	How to Run R jobs
