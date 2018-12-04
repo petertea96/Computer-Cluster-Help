@@ -1,17 +1,18 @@
 # Computer-Cluster-Help
-Rough notes to get started on submitting R jobs to a supercomputer 
-
-These rough notes offers an introduction to CAC. More information can be found on the following websites:igan
+These are (very) rough notes to get started on submitting R jobs to a supercomputer and offers an introduction to CAC. 
+Many institutions have guides on their websites to help students navigate their own cluster. The ones I found really helpful include: Utah, Berkeley, and Michigan. More information can be found on the following websites:
 
 http://research-it.berkeley.edu/services/high-performance-computing/using-r-savio
+
 https://thecoatlessprofessor.com/programming/working-with-r-on-a-cluster/
 
 https://hcc-docs.unl.edu/display/HCCDOC/Submitting+R+jobs
+
 https://cac.queensu.ca/wiki/index.php/Hardware:Frontenac
 
-Many institutions have guides on their websites to help students navigate their own cluster. The ones I found really helpful include: Utah, Berkeley, and Michigan.
 
 https://sph.umich.edu/biostat/computing/cluster/examples/r.html
+
 https://www.chpc.utah.edu/presentations/index.php
 
 1.	Log onto the cluster:
