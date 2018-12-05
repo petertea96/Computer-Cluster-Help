@@ -45,20 +45,26 @@ cat : Print the contents of a file. Example:  cat namefile.txt
 
 **4.	How to transfer files from your computer onto the CAC directory (For windows):**
 
-One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it).
+One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it. It can be used if you're a mac user.).
 
 This program allows you to easily drag and drop files between the two directories.
 
+Host name: login.cac.queensu.ca
+Port number: 22
+User name: _____
+Password: _____
+
+There are more sophisticated ways to upload files using the command line terminal. Feel free to look those up if you're a pro. 
 
 **5.	How do you write your *.sh files?**
 
 - For something more sophisticated, feel free to use text editors on the command line such as nano or vim.
--	If you're uncomfortable with this, you can instead download Notepad ++.
+-	If you're uncomfortable with this, you can instead download Notepad ++ and write them there.
 -	When you save, always make sure to have the extension .sh
 
 **6.	Submit your *.sh files onto CAC:**
 
--	sbatch yourjob.sh  
+-	Here is the command: sbatch yourjob.sh  
 
 **7.	Sometimes when you submit your *.sh jobs, you may encounter an error message such as:**
 
@@ -66,14 +72,17 @@ This program allows you to easily drag and drop files between the two directorie
 “sbatch: error: instead of expected UNIX line breaks (\n)
 
 -	One possible solution is this code:
+
 dos2unix yourjob.sh
 
 -	Now, try running your job again.
 
 **8.	How to Run R jobs**
 
--	Check out test1.sh as well as Cluster_Test1.R for a very simple example. 
+-	Check out test1.sh as well as Cluster_Test1.R for a very simple example I created. your .sh script will "tell" the supercomputer to run an R script using the Rscript or R CMD BATCH command.
+
 -	Make sure though that your R script is in the same directory as your shell script. If your R script is in a different directory, then change your code to: [path to R file]/Rfile
+
 -	You could also use Rscript instead of R CMD BATCH in your *.sh scripts…
 
 **9.	A way to check on the status of the jobs you have submitted:**
@@ -89,7 +98,9 @@ If the R codes you input contain calls such as library() or require() then it wo
 3.	It may be helpful to look at the arguments of the install.packages() function.
 In CAC, type: install.packages(“R package you want”, lib=”Path to folder where you want to save your R packages”)
 Note: This may take a while…
-4.	Close the terminal and login again to CAC
+The path to folder should be the same folder you just created.
+
+4.	Close the terminal and login again to CAC (or use the quit() function in R).
 5.	In all of your R script files, you will need to add the following line at the top:
 .libPaths(“Path to the folder that has your R packages in CAC”)
 
@@ -104,7 +115,9 @@ For example, I made a folder called “RPackages” which contains all of my dow
 
 **11.	How to perform array jobs and how to call variables from shell script to your R script.**
 
--	Check out test4.sh and test4.R
+- Array jobs is a way of submitting your own job, except the run time to completion is usually much faster. In array jobs, we split your original jobs into multiple different jobs. The supercomputer will run each split job simultaneously, resulting in a much more efficient run time to completion.
+
+-	For illustration, check out test4.sh and test4.R
 
 
 
