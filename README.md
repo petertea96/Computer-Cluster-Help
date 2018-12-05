@@ -119,11 +119,12 @@ Here is a sample command I’ve used:
 ./ms 200 1 -t 5.0 -T
 
 Here, 
-•	200 denotes the number of haplotypes I want to simulate
-•	1 denotes the number of simulations I want to run
-•	-t denotes
-•	5.0 denotes some mutation rate
-•	-T means I want the output to include tree data
-To save the output of the ms file into some directory, use the following code:
-./ms 200 1 -t 5.0 -T > /global/home/hpc4300/results.txt
+
+- 200 denotes the number of haplotypes I want to simulate
+- 1 denotes the number of simulations I want to run
+- -t denotes
+- 	5.0 denotes some mutation rate
+- 	-T means I want the output to include tree data
+- To save the output of the ms file into some directory, use the following code:
+- ./ms 200 1 -t 5.0 -T > /global/home/hpc4300/results.txt
 *Change to your own directory. Note that results.txt is the name and file type I give to the output file saved.
