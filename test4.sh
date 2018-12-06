@@ -7,10 +7,11 @@
 #SBATCH --array=1-16
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time=0-9:0:0
-#SBATCH --mem=8GB
+#SBATCH --time=0-9:0:0								# days-hours:minutes:seconds      # How long you expect your job to run for (default is 3 hours).
+#SBATCH --mem=8GB									# Memory requested in megabytes (default is 1024 MB).
+
 # commands for your job go here
-#load-sse3
+
 module load r
 #echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 Rscript /global/home/hpc4300/BIM_Final_RCodes/test4.R $SLURM_ARRAY_TASK_ID
