@@ -16,6 +16,8 @@ https://www.chpc.utah.edu/presentations/index.php
 
 Without further ado...
 
+Notation note: [ ] represents a parameter. You will need to change this yourself to fit your own needs.
+
 **1.	Log onto the cluster:**
 
 Code: ssh -X hpc4300@login.cac.queensu.ca
@@ -26,7 +28,7 @@ The terminal will then prompt you to enter your password.
 
 **2.	Create a new directory (folder):**
 
-mkdir NewFolderName
+mkdir [NewFolderName]
 
 
 3.	Here are some nice general commands to know…
@@ -40,14 +42,17 @@ rm [filename]: delete the filename from your directory.
 cd : Change the directory. Example : cd /global/home/hpcg1578/Peter
 
 cat : Print the contents of a file. Example:  cat namefile.txt
+ - Note: There are many other uses for this command as well. 
 
 
 
 **4.	How to transfer files from your computer onto the CAC directory (For windows):**
 
-One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it. It can be used if you're a mac user.).
+One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it. Filezilla can be used if you're a mac user.).
 
-This program allows you to easily drag and drop files between the two directories.
+This program allows you to easily drag and drop files between your own computer directories to the directory on the Supercomputer.
+
+**Things you'll need to know:**
 
 Host name: login.cac.queensu.ca
 Port number: 22
@@ -61,6 +66,18 @@ There are more sophisticated ways to upload files using the command line termina
 - For something more sophisticated, feel free to use text editors on the command line such as nano or vim.
 -	If you're uncomfortable with this, you can instead download Notepad ++ and write them there.
 -	When you save, always make sure to have the extension .sh
+
+- All bash scripts must start with a preamble that may look like this: 
+
+#!/bin/bash
+#SBATCH -c [num_cpus]                      # Number of CPUS requested (default is 1 CPU).
+#SBATCH --mem=[megabytes]                  # Memory requested in megabytes (default is 1024 MB).
+#SBATCH -t days-hours:minutes:seconds      # How long you expect your job to run for (default is 3 hours). If your job takes longer than                                            # specified, then your job submission will end abruptly.
+
+** some demo commands to use as a test**
+**Note to self: Write a shell script for this:**
+echo 'starting test job...'
+echo 'our job worked!'
 
 **6.	Submit your *.sh files onto CAC:**
 
