@@ -122,7 +122,7 @@ dos2unix yourjob.sh
 
 -	Make sure though that your R script is in the same directory as your shell script. If your R script is in a different directory, then change your code to: [path to R file]/Rfile
 
--	You could also use Rscript instead of R CMD BATCH in your *.sh scripts…
+-	I've read that Rscript is (somehow) better than the R CMD BATCH command. I personally have used both commands and have never encountered any problems wih either command.
 
 ## **9.	A way to check on the status of the jobs you have submitted:**
 
