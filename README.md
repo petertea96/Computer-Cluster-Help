@@ -161,9 +161,10 @@ For example, I made a folder called “RPackages” which contains all of my dow
 
 -	For illustration, check out test4.sh and test4.R
 
+- What's the point? If your R script contains a for loop with say 3000 iterations, do you really want to wait until the computer goes through each iteration 3000 times in one shot? Why not split your job of 3000 iterations into 100 jobs, where each job runs 30 iterations. The time to completion using an array job will be significantly quicker. 
 
 
-12.	For coding in bash, the syntax is a little different however all concepts in your usual programming are the same. The following website is helpful in figuring out the syntax:
+## 12.	For coding in bash, the syntax is a little different however all concepts in your usual programming are the same. The following website is helpful in figuring out the syntax:
 
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
 -	I’ve also compiled some very rough notes titled “Shell scripting tutorial.docx”.
