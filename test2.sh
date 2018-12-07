@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=test1
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=ptea035@uottawa.ca
+#SBATCH --mail-user=email@uottawa.ca
 #SBATCH --output=STD.out
 #SBATCH --error=STD.err
 #SBATCH --nodes=1
