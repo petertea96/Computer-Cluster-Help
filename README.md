@@ -18,7 +18,7 @@ Without further ado...
 
 Notation note: [ ] represents a parameter. You will need to change this yourself to fit your own needs.
 
-**1.	Log onto the cluster:**
+## **1.	Log onto the cluster:**
 
 Code: ssh -X hpc4300@login.cac.queensu.ca
 *Use your own hpc number though…
@@ -26,7 +26,7 @@ Code: ssh -X hpc4300@login.cac.queensu.ca
 The terminal will then prompt you to enter your password.
 
 
-**2.	Create a new directory (folder):**
+## **2.	Create a new directory (folder):**
 
 mkdir [NewFolderName]
 
@@ -46,38 +46,59 @@ cat : Print the contents of a file. Example:  cat namefile.txt
 
 
 
-**4.	How to transfer files from your computer onto the CAC directory (For windows):**
+## **4.	How to transfer files from your computer onto the CAC directory (For windows):**
 
-One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it. Filezilla can be used if you're a mac user.).
+One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it. Filezilla can be used as an alternative program if you're a mac user.).
 
 This program allows you to easily drag and drop files between your own computer directories to the directory on the Supercomputer.
 
 **Things you'll need to know:**
 
 Host name: login.cac.queensu.ca
+
 Port number: 22
+
 User name: _____
+
 Password: _____
 
-There are more sophisticated ways to upload files using the command line terminal. Feel free to look those up if you're a pro. 
+Note: There are more sophisticated ways to upload files using the command line terminal. Feel free to look those up if you're a pro. 
 
-**5.	How do you write your *.sh files?**
+## **5.	How do you write your *.sh files?**
 
 - For something more sophisticated, feel free to use text editors on the command line such as nano or vim.
--	If you're uncomfortable with this, you can instead download Notepad ++ and write them there.
--	When you save, always make sure to have the extension .sh
 
-- All bash scripts must start with a preamble that may look like this: 
+-	If you're uncomfortable with this, you can instead download Notepad ++ and write them there.
+
+-	When you save your bash scripts, always make sure to have the extension .sh
+
+- All bash scripts must start with a preamble that may look like this (I use this type of format for all my bash scripts): 
 
 #!/bin/bash
-#SBATCH -c [num_cpus]                      # Number of CPUS requested (default is 1 CPU).
-#SBATCH --mem=[megabytes]                  # Memory requested in megabytes (default is 1024 MB).
-#SBATCH -t days-hours:minutes:seconds      # How long you expect your job to run for (default is 3 hours). If your job takes longer than                                            # specified, then your job submission will end abruptly.
 
-** some demo commands to use as a test**
-**Note to self: Write a shell script for this:**
+#SBATCH --job-name=myjobname
+
+#SBATCH --mail-type=ALL  #Ensures you will be notified/emailed when your job submission begins and ends.
+
+#SBATCH --mail-user=email@uottawa.ca
+
+#SBATCH -c [num_cpus]                      # Number of CPUS requested (default is 1 CPU).
+
+#SBATCH --mem=[megabytes]                  # Memory requested in megabytes (default is 1024 MB).
+
+#SBATCH -t days-hours:minutes:seconds      # How long you expect your job to run for (default is 3 hours). 
+
+
+
+Note: If your job takes longer than specified, then your job submission will end abruptly.
+
+**Some demo commands to use as a test**
+
 echo 'starting test job...'
+
 echo 'our job worked!'
+
+FYI - I've created this bash sscript as yourjob.sh. You should first change the email address, and then try to submit this as a job onto the cluster (read steps 6 and 7 first).
 
 **6.	Submit your *.sh files onto CAC:**
 
