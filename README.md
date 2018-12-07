@@ -31,7 +31,7 @@ The terminal will then prompt you to enter your password.
 mkdir [NewFolderName]
 
 
-3.	Here are some nice general commands to know…
+## 3.	Here are some nice general commands to know…
 
 ls : List items in your current directory.
 
