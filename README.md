@@ -118,7 +118,9 @@ dos2unix yourjob.sh
 
 ## **8.	How to Run R jobs**
 
--	Check out test1.sh as well as Cluster_Test1.R for a very simple example I created. your .sh script will "tell" the supercomputer to run an R script using the Rscript or R CMD BATCH command.
+-	Check out test1.sh as well as Cluster_Test1.R for a very simple example I created. 
+
+- Your .sh script will "instruct" the supercomputer to run an R script using the Rscript or R CMD BATCH command.
 
 -	Make sure though that your R script is in the same directory as your shell script. If your R script is in a different directory, then change your code to: [path to R file]/Rfile
 
@@ -147,6 +149,7 @@ For example, I made a folder called “RPackages” which contains all of my dow
 
 
 -	ILLUSTRATION: Please see test2.sh and Cluster_Test2.R for an example. I use the “SKAT” package. 
+
 -	Some R packages are very special (Ex: MDMR), and extra steps will be required to install these packages. This code may help:
 1.	At prompt type: module load gcc
 (This changes the c compiler, which R uses to install packages)
