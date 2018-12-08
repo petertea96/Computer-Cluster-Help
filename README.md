@@ -98,6 +98,8 @@ Note: There are more sophisticated ways to upload files using the command line t
 
 Note: If your job takes longer than specified, then your job submission will end abruptly.
 
+
+
 3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
 
 **Some demo commands to use as a test**
@@ -106,7 +108,7 @@ echo 'starting test job...'
 
 echo 'our job worked!'
 
-FYI - I've created this bash script as yourjob.sh. You should first change the email address, and then try to submit this as a job onto the cluster (read steps 6 and 7 first).
+FYI - I've created and have provided this bash script as yourjob.sh (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read steps 6 and 7 first).
 
 4. -	When you save your bash scripts, always make sure to have the extension .sh
 
