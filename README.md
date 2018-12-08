@@ -98,7 +98,8 @@ Note: There are more sophisticated ways to upload files using the command line t
 
 Note: If your job takes longer than specified, then your job submission will end abruptly.
 
-3. 
+3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
+
 **Some demo commands to use as a test**
 
 echo 'starting test job...'
