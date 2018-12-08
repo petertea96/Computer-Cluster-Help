@@ -78,7 +78,7 @@ Note: There are more sophisticated ways to upload files using the command line t
 
 
 
-2. - All bash scripts must start with a preamble that may look like this (I use this type of format for all my bash scripts): 
+2. - All bash scripts that you write must start with a preamble that may look like this (Note: I use this type of format for all my bash scripts): 
 
 #!/bin/bash
 
