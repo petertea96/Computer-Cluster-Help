@@ -43,6 +43,7 @@ cd : Change the directory. Example : cd /global/home/hpcg1578/Peter
 
 cat : Print the contents of a file. Example:  cat namefile.txt
  - Note: There are many other uses for this command as well. 
+ - cat can be used in conjunction with array jobs to combine a bunch of your results into a single file. Trust me, it is much easier to use cat to combine your files than it is through an R Script.
 
 
 
@@ -66,13 +67,18 @@ Note: There are more sophisticated ways to upload files using the command line t
 
 ## **5.	How do you write your *.sh files?**
 
-- For something more sophisticated, feel free to use text editors on the command line such as nano or vim.
+1. - You will most likely want to write your bash script files on a text editor. 
 
--	If you're uncomfortable with this, you can instead download Notepad ++ and write them there.
+- I personally have downloaded the program Notepad ++ and have written my scripts there.
 
--	When you save your bash scripts, always make sure to have the extension .sh
+- But, if you're a pro, you might want to look into using text editors on the command line such as nano or vim.
 
-- All bash scripts must start with a preamble that may look like this (I use this type of format for all my bash scripts): 
+
+
+
+
+
+2. - All bash scripts that you write must start with a preamble that may look like this (Note: I use this type of format for all my bash scripts): 
 
 #!/bin/bash
 
@@ -92,13 +98,19 @@ Note: There are more sophisticated ways to upload files using the command line t
 
 Note: If your job takes longer than specified, then your job submission will end abruptly.
 
+
+
+3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
+
 **Some demo commands to use as a test**
 
 echo 'starting test job...'
 
 echo 'our job worked!'
 
-FYI - I've created this bash script as yourjob.sh. You should first change the email address, and then try to submit this as a job onto the cluster (read steps 6 and 7 first).
+FYI - I've created and have provided this bash script as yourjob.sh (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read steps 6 and 7 first).
+
+4. -	When you save your bash scripts, always make sure to have the extension .sh
 
 ## **6.	Submit your *.sh files onto CAC:**
 
