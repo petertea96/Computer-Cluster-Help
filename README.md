@@ -69,9 +69,9 @@ Note: There are more sophisticated ways to upload files using the command line t
 
 1. - You will most likely want to write your bash script files on a text editor. 
 
-- I downloaded the program Notepad ++ and have written my scripts there.
+- I personally have downloaded the program Notepad ++ and have written my scripts there.
 
--If you're a pro, you might want to look into using text editors on the command line such as nano or vim.
+- But, if you're a pro, you might want to look into using text editors on the command line such as nano or vim.
 
 
 
