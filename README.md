@@ -43,6 +43,7 @@ cd : Change the directory. Example : cd /global/home/hpcg1578/Peter
 
 cat : Print the contents of a file. Example:  cat namefile.txt
  - Note: There are many other uses for this command as well. 
+ - cat can be used in conjunction with array jobs to combine a bunch of your results into a single file. Trust me, it is much easier to use cat to combine your files than it is through an R Script.
 
 
 
