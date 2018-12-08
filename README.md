@@ -67,13 +67,18 @@ Note: There are more sophisticated ways to upload files using the command line t
 
 ## **5.	How do you write your *.sh files?**
 
-- For something more sophisticated, feel free to use text editors on the command line such as nano or vim.
+1. - You will most likely want to write your bash script files on a text editor. 
 
--	If you're uncomfortable with this, you can instead download Notepad ++ and write them there.
+- I downloaded the program Notepad ++ and have written my scripts there.
 
--	When you save your bash scripts, always make sure to have the extension .sh
+-If you're a pro, you might want to look into using text editors on the command line such as nano or vim.
 
-- All bash scripts must start with a preamble that may look like this (I use this type of format for all my bash scripts): 
+
+
+
+
+
+2. - All bash scripts must start with a preamble that may look like this (I use this type of format for all my bash scripts): 
 
 #!/bin/bash
 
@@ -93,6 +98,7 @@ Note: There are more sophisticated ways to upload files using the command line t
 
 Note: If your job takes longer than specified, then your job submission will end abruptly.
 
+3. 
 **Some demo commands to use as a test**
 
 echo 'starting test job...'
@@ -100,6 +106,8 @@ echo 'starting test job...'
 echo 'our job worked!'
 
 FYI - I've created this bash script as yourjob.sh. You should first change the email address, and then try to submit this as a job onto the cluster (read steps 6 and 7 first).
+
+4. -	When you save your bash scripts, always make sure to have the extension .sh
 
 ## **6.	Submit your *.sh files onto CAC:**
 
