@@ -1,4 +1,8 @@
 # Computer-Cluster-Help
+
+## Why bother with a supercomputer, when I can just run my R jobs on my own device?
+
+
 These are (very) rough notes to get started on submitting R jobs to a supercomputer and offers an introduction to CAC. 
 Many institutions have guides on their websites to help students navigate their own cluster. The ones I found really helpful include: Utah, Berkeley, and Michigan.  You can check out the following websites if you're looking for notes that are more sophisticated than the ones I provide:
 
