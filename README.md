@@ -1,6 +1,10 @@
 # Computer-Cluster-Help
 
-## Why bother with a supercomputer, when I can just run my R jobs on my own device?
+## Why bother with a supercomputer, when I can just run my R jobs on my own device? 
+You may wonder why Professor Burkett (or your own supervisor), has advised you to sign up for a CAC account for the purposes of your research project.  The main reason is because the supercomputer has a lot more computing power than your own device, and hence it should be much easier to run your R jobs on the Supercomputer than it is to run on your own device. However, one drawback to using a supercomputer is that you must be familiar with some basic UNIX commands in order to run your R code on the supercomputer. 
+
+On your own device, you can easily source your R scripts and have them run on your computer. When you use a supercomputer, however, you'll need to perform one extra step to run your R scripts. This extra step is writing BASH Shell scripts. BASH scripts serve as instructions to the supercomputer to run your R scripts. At minimum, the instructions you write in your BASH Shell scripts should tell the Supercomputer to: 1) load the program R, 2) which R scripts you want the supercomputer to run
+3) direct the supercomputer to the proper directory (folder) that contains all of your R codes and finally 4) where (i.e. which directory) the results of your job submission should be saved... 
 
 
 These are (very) rough notes to get started on submitting R jobs to a supercomputer and offers an introduction to CAC. 
