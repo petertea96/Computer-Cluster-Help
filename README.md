@@ -1,6 +1,6 @@
 # Computer-Cluster-Help
 These are (very) rough notes to get started on submitting R jobs to a supercomputer and offers an introduction to CAC. 
-Many institutions have guides on their websites to help students navigate their own cluster. The ones I found really helpful include: Utah, Berkeley, and Michigan. More information can be found on the following websites:
+Many institutions have guides on their websites to help students navigate their own cluster. The ones I found really helpful include: Utah, Berkeley, and Michigan.  You can check out the following websites if you're looking for notes that are more sophisticated than the ones I provide:
 
 https://thecoatlessprofessor.com/programming/working-with-r-on-a-cluster/
 
@@ -41,19 +41,19 @@ rm [filename]: delete the filename from your directory.
 
 cd : Change the directory. Example : cd /global/home/hpcg1578/Peter
 
-cat : Print the contents of a file. Example:  cat namefile.txt
+cat : Print the contents of a file in your directory. Example:  cat namefile.txt
  - Note: There are many other uses for this command as well. 
- - cat can be used in conjunction with array jobs to combine a bunch of your results into a single file. Trust me, it is much easier to use cat to combine your files than it is through an R Script.
+ - cat can be used in conjunction with array jobs to combine a bunch of your results into a single file. Trust me, it is much easier to use cat to combine your files than it is through an R Script. More on this later...
 
 
 
 ## **4.	How to transfer files from your computer onto the CAC directory (For windows):**
 
-One very amateur way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it. Filezilla can be used as an alternative program if you're a mac user.).
+One very amateur/easy way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it. Filezilla can be used as an alternative program if you're a mac user.).
 
 This program allows you to easily drag and drop files between your own computer directories to the directory on the Supercomputer.
 
-**Things you'll need to know:**
+**Things you'll need to know if using WINSCP or FileZilla:**
 
 Host name: login.cac.queensu.ca
 
@@ -63,19 +63,13 @@ User name: _____
 
 Password: _____
 
-Note: There are more sophisticated ways to upload files using the command line terminal. Feel free to look those up if you're a pro. 
+Note: There are more sophisticated/better ways to upload files using the command line terminal. Feel free to look those up if you think you're a pro. 
 
 ## **5.	How do you write your *.sh files?**
 
-1. - You will most likely want to write your bash script files on a text editor. 
+1. - You will most likely want to write your bash script files on a text editor. These script files are needed to instruct the Supercomputer how to run your R jobs.
 
-- I personally have downloaded the program Notepad ++ and have written my scripts there.
-
-- But, if you're a pro, you might want to look into using text editors on the command line such as nano or vim.
-
-
-
-
+- I personally have downloaded the program Notepad ++ and have written my scripts there. But, if you're a pro, you might want to look into using text editors on the command line such as nano or vim.
 
 
 2. - All bash scripts that you write must start with a preamble that may look like this (Note: I use this type of format for all my bash scripts): 
