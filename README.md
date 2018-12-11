@@ -36,7 +36,7 @@ Notation note: [ ] represents a parameter. You will need to change this yourself
 
 On the command terminal (or on UBUNTU), type/copy&paste the following to login to CAC:
 
-Code: ssh -X hpc4300@login.cac.queensu.ca
+ssh -X hpc4300@login.cac.queensu.ca
 *Use your own hpc number though…
 
 The terminal will then prompt you to enter your password.
