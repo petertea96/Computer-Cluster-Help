@@ -34,6 +34,8 @@ Notation note: [ ] represents a parameter. You will need to change this yourself
 
 ## **1.	Log onto the cluster:**
 
+On the command terminal (or on UBUNTU), type/copy&paste the following to login to CAC:
+
 Code: ssh -X hpc4300@login.cac.queensu.ca
 *Use your own hpc number though…
 
