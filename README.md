@@ -126,11 +126,11 @@ FYI - I've created and have provided this bash script as yourjob.sh (check out t
 
 4. -	When you save your bash scripts, always make sure to have the extension .sh
 
-## **6.	Submit your *.sh files onto CAC:**
+## **6.	Submit your .sh files onto CAC:**
 
 -	Here is the command: sbatch yourjob.sh  
 
-## **7.	Sometimes when you submit your *.sh jobs, you may encounter an error message such as:**
+## **7.	Sometimes when you submit your .sh jobs, you may encounter an error message such as:**
 
 “sbatch: error: Batch script contains DOS line breaks (\r\n)
 “sbatch: error: instead of expected UNIX line breaks (\n)
