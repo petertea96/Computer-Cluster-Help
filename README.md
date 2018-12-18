@@ -112,7 +112,7 @@ Note: There are more sophisticated/better ways to upload files using the command
 
 Note: If your job takes longer than specified, then your job submission will end abruptly.
 
-
+Also, please pay careful attention to the fact that there are no spaces between the equal signs. An added space may seem trivial, but this will totally mess up everything!!!
 
 3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
 
