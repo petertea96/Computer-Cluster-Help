@@ -28,9 +28,13 @@ https://sph.umich.edu/biostat/computing/cluster/examples/r.html
 
 https://www.chpc.utah.edu/presentations/index.php
 
+
+
 Without further ado...
 
 Notation note: [ ] represents a parameter. You will need to change this yourself to fit your own needs.
+
+I will assume that you have signed up for a Compute Canada account.
 
 ## **1.	Log onto the cluster:**
 
