@@ -122,18 +122,16 @@ echo 'starting test job...'
 
 echo 'our job worked!'
 
-FYI - I've created and have provided this bash script as yourjob.sh (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read steps 6 and 7 first).
+FYI - I've created and have provided this bash script as yourjob.sh (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read step 6 first).
 
 4. -	When you save your bash scripts, always make sure to have the extension .sh
 
 ## **6.	Submit your .sh files onto CAC:**
 
 -	Here is the command: sbatch yourjob.sh  
-
-## **7.	Sometimes when you submit your .sh jobs, you may encounter an error message such as:**
-
-“sbatch: error: Batch script contains DOS line breaks (\r\n)
-“sbatch: error: instead of expected UNIX line breaks (\n)
+- Sometimes when you submit your .sh jobs, you may encounter an error message such as:
+*  “sbatch: error: Batch script contains DOS line breaks (\r\n)
+*  “sbatch: error: instead of expected UNIX line breaks (\n)
 
 -	One possible solution is this code:
 
@@ -142,7 +140,8 @@ dos2unix yourjob.sh
 -	Now, try running your job again.
 
 
-## **8.	How to Run R jobs**
+
+## **7.	How to Run R jobs**
 
 -	Check out test1.sh as well as Cluster_Test1.R for a very simple example I created. 
 
@@ -152,11 +151,11 @@ dos2unix yourjob.sh
 
 -	I've read that Rscript is (somehow) better than the R CMD BATCH command. I personally have used both commands and have never encountered any problems wih either command.
 
-## **9.	A way to check on the status of the jobs you have submitted:**
+## **8.	A way to check on the status of the jobs you have submitted:**
 
 -	squeue --start | grep hpc4300
 
-## **10.	How to install R packages onto the CAC cluster.**
+## **9.	How to install R packages onto the CAC cluster.**
 
 If the R codes you input contain calls such as library() or require() then it won’t work in the cluster. You will need to install the R packages yourself into the CAC directory. Here’s how to do it:
 
@@ -181,7 +180,7 @@ For example, I made a folder called “RPackages” which contains all of my dow
 (This changes the c compiler, which R uses to install packages)
 2.	Open R and then try installing MDMR again using install.packages(“MDMR”). If it installed successfully, library(MDMR) should work. 
 
-## **11.	How to perform array jobs and how to call variables from shell script to your R script.**
+## **10.	How to perform array jobs and how to call variables from shell script to your R script.**
 
 - Array jobs is a way of submitting your own job, except the run time to completion is usually much faster. In array jobs, we split your original jobs into multiple different jobs. The supercomputer will run each split job simultaneously, resulting in a much more efficient run time to completion.
 
@@ -190,12 +189,12 @@ For example, I made a folder called “RPackages” which contains all of my dow
 - What's the point? If your R script contains a for loop with say 3000 iterations, do you really want to wait until the computer goes through each iteration 3000 times in one shot? Why not split your job of 3000 iterations into 100 jobs, where each job runs 30 iterations. The time to completion using an array job will be significantly quicker. 
 
 
-## 12.	For coding in bash, the syntax is a little different however all concepts in your usual programming are the same. The following website is helpful in figuring out the syntax:
+## 11.	For coding in bash, the syntax is a little different however all concepts in your usual programming are the same. The following website is helpful in figuring out the syntax:
 
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
 -	I’ve also compiled some very rough notes titled “Shell scripting tutorial.docx”.
 
-## **13.	How to run the ms program:
+## **12.	How to run the ms program:
 
 Here is a sample command I’ve used:
 ./ms 200 1 -t 5.0 -T
