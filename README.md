@@ -85,7 +85,7 @@ Password: _____
 
 Note: There are more sophisticated/better ways to upload files using the command line terminal. Feel free to look those up if you think you're a pro. 
 
-## **5.	How do you write your *.sh files?**
+## **5.	How do you write your .sh files?**
 
 1. - You will most likely want to write your bash script files on a text editor. These script files are needed to instruct the Supercomputer how to run your R jobs.
 
