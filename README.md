@@ -145,9 +145,9 @@ dos2unix yourjob.sh
 
 -	Check out test1.sh as well as Cluster_Test1.R for a very simple example I created. 
   
-  * Your .sh script will "instruct" the supercomputer to run an R script using the Rscript or R CMD BATCH command.
+  *  Your .sh script will "instruct" the supercomputer to run an R script using the Rscript or R CMD BATCH command.
   
-  * But, you first have to load R with the command: module load r
+  *  But, you first have to load R with the command: module load r
   
 -	Make sure though that your R script is in the same directory as your shell script. If your R script is in a different directory, then change your code to: [path to R file]/Rfile
 
