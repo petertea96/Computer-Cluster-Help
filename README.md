@@ -130,8 +130,8 @@ FYI - I've created and have provided this bash script as yourjob.sh (check out t
 
 -	Here is the command: sbatch yourjob.sh  
 - Sometimes when you submit your .sh jobs, you may encounter an error message such as:
-*  “sbatch: error: Batch script contains DOS line breaks (\r\n)
-*  “sbatch: error: instead of expected UNIX line breaks (\n)
+  “sbatch: error: Batch script contains DOS line breaks (\r\n)
+  “sbatch: error: instead of expected UNIX line breaks (\n)
 
 -	One possible solution is this code:
 
