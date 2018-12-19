@@ -14,4 +14,4 @@
 
 module load r
 #echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
-Rscript /global/home/hpc4300/BIM_Final_RCodes/test4.R $SLURM_ARRAY_TASK_ID
+Rscript /global/home/hpc4300/BIM_Final_RCodes/Cluster_Test4.R $SLURM_ARRAY_TASK_ID
