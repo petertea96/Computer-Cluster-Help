@@ -182,7 +182,7 @@ For example, I made a folder called “RPackages” which contains all of my dow
 
 - Array jobs is a way of submitting your own job, except the run time to completion is usually much faster. In array jobs, we split your original jobs into multiple different jobs. The supercomputer will run each split job simultaneously, resulting in a much more efficient run time to completion.
 
--	For illustration, check out Cluster_Test4.sh and Cluster_Test4.R
+-	For illustration, check out Cluster_Test4.sh and Cluster_Test4.R (Note: You will need to change your directories accordingly - and change the path file to you R script).
 
 - What's the point? If your R script contains a for loop with say 3000 iterations, do you really want to wait until the computer goes through each iteration 3000 times in one shot? Why not split your job of 3000 iterations into 100 jobs, where each job runs 30 iterations. The time to completion using an array job will be significantly quicker. 
 
