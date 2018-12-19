@@ -217,6 +217,7 @@ For example, I made a folder called “RPackages” which contains all of my dow
 -	For illustration, check out Cluster_Test4.sh and Cluster_Test4.R (Note: You will need to change your directories accordingly - and change the path file to you R script).
 
 - One area where I've used array jobs is in splitting _for_ loop iterations. For example, I found a way to split a for loop with 3000 iterations into 100 separate array jobs. Here is my solution: Cluster_Test5.R
+  * Note: If you're trying to run Cluster_Test5.R, you'll need to create your own BASH script, setting arrays equal to 1-100...
 
 
 
