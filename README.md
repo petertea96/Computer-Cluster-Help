@@ -116,13 +116,12 @@ Note: There are more sophisticated/better ways to upload files using the command
 
 3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
 
-**Some demo commands to use as a test**
 
 echo 'starting test job...'
 
 echo 'our job worked!'
 
-FYI - I've created and have provided this bash script as yourjob.sh (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read step 6 first).
+FYI - I've created and have provided this bash script as __yourjob.sh__ (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read step 6 first).
 
 4. -	When you save your bash scripts, always make sure to have the extension .sh
 
@@ -142,7 +141,7 @@ dos2unix yourjob.sh
 
 
 ## **7.	How to Run R jobs**
--	Check out test1.sh as well as Cluster_Test1.R for a very simple example I created.   
+-	Check out Cluster_Test1.sh as well as Cluster_Test1.R for a very simple example I created.   
   *  Your .sh script will "instruct" the supercomputer to run an R script using the Rscript or R CMD BATCH command.
   *  But, you first have to load R with the command: module load r
   
@@ -172,7 +171,7 @@ The path to folder should be the same folder you just created.
 For example, I made a folder called “RPackages” which contains all of my downloaded R packages on CAC. My path is : .libPaths("/global/home/hpc4300/RPackages") 
 
 
--	ILLUSTRATION: Please see test2.sh and Cluster_Test2.R for an example. I use the “SKAT” package. 
+-	ILLUSTRATION: Please see Cluster_Test2.sh and Cluster_Test2.R for an example. I use the “SKAT” package. 
 
 -	Some R packages are very special (Ex: MDMR), and extra steps will be required to install these packages. This code may help:
 1.	At prompt type: module load gcc
@@ -183,7 +182,7 @@ For example, I made a folder called “RPackages” which contains all of my dow
 
 - Array jobs is a way of submitting your own job, except the run time to completion is usually much faster. In array jobs, we split your original jobs into multiple different jobs. The supercomputer will run each split job simultaneously, resulting in a much more efficient run time to completion.
 
--	For illustration, check out test4.sh and test4.R
+-	For illustration, check out Cluster_Test4.sh and Cluster_Test4.R
 
 - What's the point? If your R script contains a for loop with say 3000 iterations, do you really want to wait until the computer goes through each iteration 3000 times in one shot? Why not split your job of 3000 iterations into 100 jobs, where each job runs 30 iterations. The time to completion using an array job will be significantly quicker. 
 
