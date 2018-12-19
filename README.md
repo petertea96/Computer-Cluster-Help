@@ -63,11 +63,11 @@ cd : Change the directory. Example : cd /global/home/hpcg1578/Peter
 
 cat : Print the contents of a file in your directory. Example:  cat namefile.txt
  - Note: There are many other uses for this command as well. 
-<<<<<<< HEAD
+
  - cat can be used in conjunction with array jobs to combine a bunch of your results into a single file. Trust me, it is much easier to use cat to combine your files than it is through an R Script.
 =======
  - cat can be used in conjunction with array jobs to combine a bunch of your results into a single file. Trust me, it is much easier to use cat to combine your files than it is through an R Script. More on this later...
->>>>>>> 7edcd2b2417dd9188795d6574a476728b1b5c10e
+
 
 
 
@@ -91,7 +91,7 @@ Note: There are more sophisticated/better ways to upload files using the command
 
 ## **5.	How do you write your .sh files?**
 
-<<<<<<< HEAD
+
 1. - You will most likely want to write your bash script files on a text editor. 
 
 - I personally have downloaded the program Notepad ++ and have written my scripts there.
@@ -103,13 +103,12 @@ Note: There are more sophisticated/better ways to upload files using the command
 
 
 
-=======
+
 1. - You will most likely want to write your bash script files on a text editor. These script files are needed to instruct the Supercomputer how to run your R jobs.
 
 - I personally have downloaded the program Notepad ++ and have written my scripts there. But, if you're a pro, you might want to look into using text editors on the command line such as nano or vim.
 
 
->>>>>>> 7edcd2b2417dd9188795d6574a476728b1b5c10e
 2. - All bash scripts that you write must start with a preamble that may look like this (Note: I use this type of format for all my bash scripts): 
 
 #!/bin/bash
@@ -134,26 +133,22 @@ Note: There are more sophisticated/better ways to upload files using the command
 
 3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
 
-<<<<<<< HEAD
+
 
 
 3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
 
-**Some demo commands to use as a test**
-=======
->>>>>>> 7edcd2b2417dd9188795d6574a476728b1b5c10e
 
 echo 'starting test job...'
 
 echo 'our job worked!'
 
-<<<<<<< HEAD
 FYI - I've created and have provided this bash script as yourjob.sh (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read steps 6 and 7 first).
 
 4. -	When you save your bash scripts, always make sure to have the extension .sh
-=======
+
 FYI - I've created and have provided this bash script as __yourjob.sh__ (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read step 6 first).
->>>>>>> 7edcd2b2417dd9188795d6574a476728b1b5c10e
+
 
 4. -	When you save your bash scripts, always make sure to have the extension .sh
 
