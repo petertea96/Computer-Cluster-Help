@@ -184,6 +184,10 @@ For example, I made a folder called “RPackages” which contains all of my dow
 
 -	For illustration, check out Cluster_Test4.sh and Cluster_Test4.R (Note: You will need to change your directories accordingly - and change the path file to you R script).
 
+- One area where I've used array jobs is in splitting _for_ loop iterations. For example, I found a way to split a for loop with 3000 iterations into 100 separate array jobs. Here is my solution: Cluster_Test5.R
+
+
+
 - What's the point? If your R script contains a for loop with say 3000 iterations, do you really want to wait until the computer goes through each iteration 3000 times in one shot? Why not split your job of 3000 iterations into 100 jobs, where each job runs 30 iterations. The time to completion using an array job will be significantly quicker. 
 
 
