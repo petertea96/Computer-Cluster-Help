@@ -97,16 +97,6 @@ Note: There are more sophisticated/better ways to upload files using the command
 - But, if you're a pro, you might want to look into using text editors on the command line such as nano or vim.
 
 
-
-
-
-
-
-1. - You will most likely want to write your bash script files on a text editor. These script files are needed to instruct the Supercomputer how to run your R jobs.
-
-- I personally have downloaded the program Notepad ++ and have written my scripts there. But, if you're a pro, you might want to look into using text editors on the command line such as nano or vim.
-
-
 2. - All bash scripts that you write must start with a preamble that may look like this (Note: I use this type of format for all my bash scripts): 
 
 #!/bin/bash
@@ -127,15 +117,9 @@ Note: There are more sophisticated/better ways to upload files using the command
 
 - Note: If your job takes longer than specified, then your job submission will end abruptly.
 
-- Also, please pay careful attention to the fact that there are no spaces between the equal signs. An added space may seem trivial, but this will totally mess up everything!!!
+- Also, please pay careful attention to the fact that there are no spaces between the equal signs in the script. An added space may seem trivial, but this will totally mess up everything!!!
 
-3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
-
-
-
-
-3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is a very basic script that you can run that just prints a couple strings. 
-
+3. After writing the preamble in your bash script, you will then write the commands you want to run. Here is an example of a  very basic script that you can run that just prints a couple strings. 
 
 _echo 'starting test job...'_
 
@@ -145,10 +129,6 @@ FYI - I've created and have provided this bash script as yourjob.sh (check out t
 
 4. -	When you save your bash scripts, always make sure to have the extension .sh
 
-FYI - I've created and have provided this bash script as __yourjob.sh__ (check out the files I've provided in this directory...). You should first change the email address in the bash script, and then try to submit this as a job onto the cluster (read step 6 first).
-
-
-4. -	When you save your bash scripts, always make sure to have the extension .sh
 
 ## **6.	Submit your .sh files onto CAC:**
 
@@ -167,12 +147,12 @@ dos2unix yourjob.sh
 
 ## **7.	How to Run R jobs**
 -	Check out Cluster_Test1.sh as well as Cluster_Test1.R for a very simple example I created.   
-  *  Your .sh script will "instruct" the supercomputer to run an R script using the Rscript or R CMD BATCH command.
-  *  But, you first have to load R with the command: module load r
+  *  Your .sh script will "instruct" the supercomputer to run an R script using the __Rscript__ or __R CMD BATCH__ command.
+  *  Note: you first have to load R with the command: __module load r__
   
 -	Make sure though that your R script is in the same directory as your shell script. If your R script is in a different directory, then change your code to: [path to R file]/Rfile
 
--	I've read that Rscript is (somehow) better than the R CMD BATCH command. I personally have used both commands and have never encountered any problems wih either command.
+-	I've read online that __Rscript__ is (somehow) better than the __R CMD BATCH__ command. I personally have used both commands and have never encountered any problems wih either command.
 
 ## **8.	A way to check on the status of the jobs you have submitted:**
 
@@ -180,7 +160,7 @@ dos2unix yourjob.sh
 
 ## **9.	How to install R packages onto the CAC cluster.**
 
-If the R codes you input contain calls such as library() or require() then it won’t work in the cluster. You will need to install the R packages yourself into the CAC directory. Here’s how to do it:
+If the R codes you input contain calls such as library() or require() then it won’t work in the cluster. You will first need to install the R packages yourself into the CAC directory. Here’s how to do it:
 
 1.	First, create a directory inside the CAC domain where you will save all of your R packages. (mkdir Foldername)
 2.	Type “R” (without quotations) into the CAC cluster. Your screen should now resemble what you would normally see when running R
@@ -190,10 +170,10 @@ Note: This may take a while…
 The path to folder should be the same folder you just created.
 
 4.	Close the terminal and login again to CAC (or use the quit() function in R).
-5.	In all of your R script files, you will need to add the following line at the top:
+5.	In all of your R script files that call a library, you will need to add the following line at the top:
 .libPaths(“Path to the folder that has your R packages in CAC”)
 
-For example, I made a folder called “RPackages” which contains all of my downloaded R packages on CAC. My path is : .libPaths("/global/home/hpc4300/RPackages") 
+For example, I made a folder called “RPackages” which contains all of my downloaded R packages on CAC. My path that I include in my R scripts is : .libPaths("/global/home/hpc4300/RPackages") 
 
 
 -	ILLUSTRATION: Please see Cluster_Test2.sh and Cluster_Test2.R for an example. I use the “SKAT” package. 
