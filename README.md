@@ -71,9 +71,9 @@ cat : Print the contents of a file in your directory. Example:  cat namefile.txt
 
 ## **4.	How to transfer files from your computer onto the CAC directory:**
 
-One very amateur/easy way of doing this is by downloading a program called WINSCP (note: This program is similar to FileZilla, if your're familiar with it. Filezilla can be used as an alternative program if you're a mac user.).
+If you're a Windows user, one very amateur/easy way of doing this is by downloading a program called WINSCP. If you're a mac user, you may instead consider using a program called Filezilla.
 
-This program allows you to easily drag and drop files between your own computer directories to the directory on the Supercomputer.
+These programs allow you to easily drag and drop files between your own computer directories to the directory on the Supercomputer.
 
 **Things you'll need to know if using WINSCP or FileZilla:**
 
