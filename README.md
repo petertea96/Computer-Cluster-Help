@@ -196,6 +196,10 @@ For example, I made a folder called “RPackages” which contains all of my dow
 
 - What's the point? If your R script contains a for loop with say 3000 iterations, do you really want to wait until the computer goes through each iteration 3000 times in one shot? Why not split your job of 3000 iterations into 100 jobs, where each job runs 30 iterations. The time to completion using an array job will be significantly quicker. 
 
+- Great, now I have hundreds of different data files that I now need to merge together before I can effectively analyse my data...
+  * If you saved your data in a format like data_i.txt where i = 1,...,10 000 then you can actually just use this linux command to aggregate all these text files into a single text file:
+  
+cat data_{1..100}.txt > /global/home/hpc4300/...
 
 ## 11.	For coding in bash, the syntax is a little different however all concepts in your usual programming are the same. The following website is helpful in figuring out the syntax:
 
